@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <div id="grid_secundario">
+        <header>
+            <a href="../index.html"><img src="../images/logo.jpg" alt="Logo" class="header__img"></a>  
+            <nav align="center" class="menu__principal">                  
+                <h1 class="header__h1">EcoBlog</h1>                
+                <ul class="menu__ul">
+                    <li class="menu__li"><a class="menu__li--a" href="../index.html">Home</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="../pages/huerto.html">¿Por qué hacer un huerto urbano?</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="../pages/marzo.html">¿Qué sembrar en marzo?</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="../pages/cedron.html">El Cedrón</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="../pages/contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>        
+        </header> 
+
+        <main class="pagina__main">
+            <section class="formulario">
+                <img src="../images/contacto.jpeg" alt="">
+                <div>
+                <h2>Formulario de Contacto</h2>
+                    <form action="envio.php" method="post">        
+                        <p>Nombre:</p>
+                        <p><input type="text" name="" id="" placeholder="Ingresa tu nombre"></p>
+
+                        <p>Correo Electrónico:</p>
+                        <p><input type="email" name="" id="" id="" placeholder="Ingresa tu mail"></p>
+                            
+                        <p>Usuario:</p>
+                        <p><input type="text" name="" id="" id="" placeholder="Ingresa tu usuario"></p>
+                        
+                        <p>Contraseña:</p>
+                        <p><input type="password" name="" id=""></p>
+                            
+                        <p>Mensaje:</p>
+                        <p><textarea></textarea></p>
+                                        
+                        <p>Genero:</p>
+                        <p><input type="radio" name="genero" id="op01" value="Masculino">Masculino
+                        <input type="radio" name="genero" id="op02" value="Femenino">Femenino
+                        </p>
+                            
+                        <p>Interes en:</p>
+                        <p>
+                        <input type="checkbox" name="opcion" value="Plantas">Plantas<br>
+                        <input type="checkbox" name="opcion" value="Plagas y Enfermedades">Plagas y Enfermedades<br>
+                        <input type="checkbox" name="opcion" value="Composta">Composta<br>
+                        <input type="checkbox" name="opcion" value="Germinados">Germinados<br>
+                        </p>
+                                        
+                        <p>Pais</p>                   
+                        <select name="pais" id="pais">
+                            <option value="Mexico">México</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="USA">USA</option>
+                        </select>
+
+                        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpiar"></p>                
+                    </form>
+                </div>            
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>   
+            <div>
+                <p>Derechos Reservados 2022</p>
+            </div>
+            <div>
+                <p>Diseñado por: Alx Andrade</p>
+            </div>
+            <div>                                         
+                <ul>
+                    <li><a href="https://www.facebook.com/alxandradeoficial/" target="_blank"><img src="../images/fb.png" alt="facebook" with="30" height="30"></a></li>
+                    <li><a href="https://www.instagram.com/alxandradeoficial/" target="_blank"><img src="../images/ig.png" alt="instagram" with="30" height="30"></a></li>   
+                </ul>            
+            </div>    
+        </footer>
+    </div>
+</body>
+</html>

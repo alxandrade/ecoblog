@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links a la hoja de estilo y favicon -->
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="icon" type="image/jpg" href="/images/logo.jpg"/>    
+    <title>EcoBlog</title>
+</head>
+
+<body>
+    <!-- Grid Principal -->
+    <div id="grid">
+        <!-- Grid Header -->
+        <header>
+            <a href="index.html"><img src="../images/logo.jpg" alt="Logo" class="header__img"></a>  
+            <nav align="center" class="menu__principal">                  
+                <h1 class="header__h1">EcoBlog</h1>                
+                <ul class="menu__ul">
+                    <li class="menu__li"><a class="menu__li--a" href="index.html">Home</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="pages/huerto.html">¿Por qué hacer un huerto urbano?</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="pages/marzo.html">¿Qué sembrar en marzo?</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="pages/cedron.html">El Cedrón</a></li>
+                    <li class="menu__li"><a class="menu__li--a" href="pages/contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>        
+        </header> 
+        
+        <!-- Sección de Artículos -->
+        <div class="articulos">          
+            <h1>Artículos</h1>
+            <div class="contenedor__articulos">                
+                <article class="blog">            
+                    <p><img class="blog__img" src="images/Huerto-Urbano.jpg" alt="Huerto Urbano"></p>
+                    <h2 class="blog__titulo">¿Por qué hacer un huerto urbano?</h2> 
+                    <p class="blog__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                    
+                    <a href="/pages/huerto.html"><button class="botonBlog">Más Información</button></a> 
+                </article>
+
+                <article class="blog">            
+                    <p><img class="blog__img" src="images/que-sembrar-en-marzo-002.jpg" alt="Que sembrar en Marzo"></p>
+                    <h2 class="blog__titulo">¿Qué sembrar en marzo?</h2>
+                    <p class="blog__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="/pages/marzo.html"><button class="botonBlog">Más Información</button></a>
+                </article>
+
+                <article class="blog">                        
+                    <p><img class="blog__img" src="images/cedron.jpg" alt="El Cedrón"></p>
+                    <h2 class="blog__titulo">El Cedrón</h2>
+                    <p class="blog__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="/pages/cedron.html"><button class="botonBlog">Más Información</button></a>
+                </article>
+            </div>
+        </div>
+        
+        <!-- Sección de Videos -->
+        <div class="videos">
+            <h1>Videos</h1>
+            <div class="contenedor__articulos">                                
+                <article class="blog">                        
+                    <p><iframe width="300" height="300" src="https://www.youtube.com/embed/zKMlOgQCP-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <h2 class="blog__titulo">Beneficios del Huerto Urbano</h2>
+                    <p class="blog__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>             
+                </article>
+              
+                <article class="blog">                        
+                    <p><iframe width="300" height="300" src="https://www.youtube-nocookie.com/embed/Cds8KzR0zXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <h2 class="blog__titulo">¿Qué hacemos en El Rincón Verde?</h2>
+                    <p class="blog__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>             
+                </article>
+
+                <article class="blog">                        
+                    <p><iframe width="300" height="300" src="https://www.youtube-nocookie.com/embed/vtwaXfPh0mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <h2 class="blog__titulo">¿Qué es el EcoHuerto?</h2>
+                    <p class="blog__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>             
+                </article>
+            </div>
+        </div>
+ 
+
+        <!-- Footer -->
+        <footer>   
+            <div>
+                <p>Derechos Reservados 2022</p>
+            </div>
+            <div>
+                <p>Diseñado por: Alx Andrade</p>
+            </div>
+            <div>                                         
+                <ul>
+                    <li><a href="https://www.facebook.com/alxandradeoficial/" target="_blank"><img src="images/fb.png" alt="facebook" with="30" height="30"></a></li>
+                    <li><a href="https://www.instagram.com/alxandradeoficial/" target="_blank"><img src="images/ig.png" alt="instagram" with="30" height="30"></a></li>   
+                </ul>            
+            </div>    
+        </footer>
+    </div>
+</body>
+</html>
