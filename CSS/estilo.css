@@ -1,226 +1,33 @@
 /*Fuente de Google*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-#grid{
-    display: grid;
-    grid-template-areas: 
-    "header  header header"
-    "articulos articulos articulos"  
-    "videos videos videos"  
-    "footer footer footer";
-    grid-template-rows: 100px auto auto 60px;
-    grid-template-columns: auto auto auto; 
-    grid-gap: 5px;    
-    margin: 0;
-} 
-
-#grid_secundario{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "articulos"      
-    "footer";
-    grid-template-rows: 100px auto 60px;
-    grid-template-columns: auto; 
-    grid-gap: 5px;    
-    margin: 0;
-}
-
-header{            
-    grid-area: header;
-    display: flex;    
-}
-
 .header__img{    
     height: 100px;
     width: 100px;
-    display: flex;
-}
-
-/* Estilo para el menu principal */
-/*Clase para la NAV*/
-.menu__principal{    
-    background-image: linear-gradient(to right, #425651, #6EAE45);    
-    font-family: 'Lato', sans-serif;
-    color: white;
-    display:flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;         
-    width: 100%;
-}
-
-.header__h1 {
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;   
-    display:flex;
-    align-content: center;
-    align-items: center;    
-    font-size: 25px;
-    padding: 10px;
-    transition: height, 3s;
-}
-
-.menu__ul{
-    list-style-type: none;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.menu__li{
-    text-align:center;
-    display:inline-block;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.menu__li--a{
-    text-decoration: none;
-    color: white;    
-}
-
-.menu__li--a:hover{
-    color:black;
-}
-
-.articulos{    
-    grid-area: articulos;
-    display: flex; 
-    flex-direction: column;
-    padding-top: 10px ;
-    padding-bottom: 10px;
- }
-
-.videos{    
-    grid-area: videos;
-    display: flex; 
-    flex-direction: column;
-    padding-top: 10px ;
-    padding-bottom: 10px;
- }
-
-/* Estilo para el Blog - DIV */
-.contenedor__articulos{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;        
-    align-items:center;
-}
-
-/* Para la seccion Article */
-.blog{
-    display:flex;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;    
-    text-align:center;
-    padding: 5px;    
-}
-
-.blog__img{
-    display: flex;    
-    width: 300px;
-    height: 300px;
-    flex-wrap: wrap;
-}
-
-.blog__img:hover{
-    border-radius: 20px;
-    opacity: 80%;
-}
-
-.blog__titulo{
-    display: flex;
-    color: black;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.blog__descripcion{
-    display: flex;
-    color:black;
-    align-content: center;    
-    font-size: 12px;
-    font-style: oblique;
-}
-
-.botonBlog{
-    padding:6px;
-    border-radius:10px;
-    background-color: #3785C1;
-    color: white;
 }
 
 /* Estilo para el footer */
-footer{
-    grid-area: footer;    
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+footer{    
     background-image: linear-gradient(to right, #425651, #6EAE45);    
     font-family: 'Lato', sans-serif;
-    color: white;
-    flex-direction: row;     
-}
-
-footer div{
-    display: flex;
-    align-items: center;
-    width: 30%;
-    justify-content: center;
-}
-
-footer ul{
-    list-style-type: none;
-    overflow: hidden;
-    text-align: right;    
-}
-
-footer li{    
-    display:inline-block; 
-    color: white;
-    font-size: 15px; 
-    margin-bottom: 5px;
-    margin-top: 10px;
-    word-spacing: 5px;
+    font-size: 20px;
+    color: white;    
 }
 
 h1{
-    display: flex;
     color: #3785C1;
-    font-size: 30px;
-    justify-content: center;    
+    font-size: 35px;
 }
 
 h2{
-    color: #3785C1;
-    text-align: left;   
-    transition:ease; 
+    color: #6EAE45;
 }
 
 h3{
-    color: #3785C1;
-    font-size: 18px;
-    text-align: left;    
+    color: orange;
 }
 
 /* Propiedades Paginas */
-.pagina__main{
-    display: flex;
-    grid-area: articulos;
-    flex-direction: column;     
-    flex-wrap: wrap;
-    padding: 10px 10px 10px 10px;
-}
-
 .pagina__figure{
     display: flex;     
     justify-content: center;
@@ -240,121 +47,14 @@ h3{
     font-size: 14px;
 }
 
-/* Pagina Formulario*/
-.formulario{
-    display: flex;
-    flex-direction: row;         
+/* Para Uso del Formulario */
+.titulo-formulario {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
 }
 
-.formulario img{
-    height:200x;
-    width:500px;
-}
-
-.formulario div{    
-    padding: 10px;    
-}
-
-/* PARA PC */
-@media only screen and (min-width:768px) and (max-width:1200px) {
-	#grid {
-        grid-template-columns: repeat(3, 1fr);        
-    }
-
-    .border {
-    	border: 4px solid black;    	
-     }
-}
-
-/* PARA TABLET */
-@media screen and (min-width:321px) and (max-width:768px) {
-	#grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "header  header"
-        "articulos articulos"  
-        "videos videos "  
-        "footer footer ";
-      }
-    
-    /*Menu Principal*/
-    .menu__li{
-        text-align:center;
-        display:inline-block;
-        padding: 3px;
-        font-size: 10px;
-    }
-
-    /*Seccion de Articulos y Videos*/
-    .contenedor__articulos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    /*Cuestiones del Footer*/
-    footer p{
-        font-size: 10px;
-        text-align: center;
-    }
-
-    /*Para el Formulario*/
-    .formulario img{
-        height:150x;
-        width:300px;
-    }
-}
-
-/* PARA MOVIL */
-@media screen and (min-width:1px) and (max-width:320px) {
-	#grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
-        "header"
-        "articulos"  
-        "videos"  
-        "footer ";
-      }
-
-
-    /*Quitar el logo*/
-    .header__img{    
-        display:none;    
-    }
-
-    /*Menu Principal*/
-    .menu__li{
-        text-align:center;
-        display:inline-block;
-        padding: 3px;
-        font-size: 10px;
-    }
-
-    /*Seccion de Articulos y Videos*/
-    .contenedor__articulos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .blog__img{
-        display: flex;    
-        width: 150px;
-        height: 150px;
-        flex-wrap: wrap;
-    }
-
-    /*Cuestiones del Footer*/
-    footer p{
-        font-size: 10px;
-        text-align: center;
-    }
-
-    footer li a img{
-        width: 20px;
-        height: 20px;
-    }
-
-    /*Para el Formulario*/
-    .formulario img{
-        display:none;
-    }
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
 }
